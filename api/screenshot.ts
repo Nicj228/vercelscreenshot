@@ -93,7 +93,7 @@ export default async (req: any, res: any) => {
 
   const selector = 'canvas';
 
-  await page.waitForSelector(selector,{ timeout: 10000 }); 
+  await page.waitForSelector(selector,{ timeout: 50000 }); 
 
   const element = await performCanvasCapture(page, selector) // const element = page.$(selector)
 
